@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkorActivity">
+
+    <TextView
+        android:id="@+id/skor_tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Skor Pertandingan"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/skor_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/skor_tvJudul">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skor_tvTim1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Tim 1"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/skor_imgTim1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/cam" />
+            <TextView
+                android:id="@+id/skor_tvSkor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="3">
+                <Button
+                    android:id="@+id/skor_btn1plus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="+1"/>
+                <Button
+                    android:id="@+id/skor_btn1plus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="+2"/>
+                <Button
+                    android:id="@+id/skor_btn1plus3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="+3"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skor_tvTim2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Tim 2"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/skor_imgTim2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/cam" />
+            <TextView
+                android:id="@+id/skor_tvSkor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="3">
+                <Button
+                    android:id="@+id/skor_btn2plus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="+1"/>
+                <Button
+                    android:id="@+id/skor_btn2plus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="+2"/>
+                <Button
+                    android:id="@+id/skor_btn2plus3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="+3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/skor_btnHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#B5927F"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        android:text="Lihat Hasil"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/skor_btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/skor_container"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HasilActivity">
+    <TextView
+        android:id="@+id/hasil_tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hasil Pertandingan"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/hasil_tvKet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemenangnya adalah"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hasil_imgHasil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/cam"/>
+
+        <ImageView
+            android:id="@+id/imgTroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/download"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hasil_tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tim 1"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
